@@ -1,7 +1,7 @@
 ## If else
 
 ### If statement
-```
+```JS
 let country = prompt("What country are you from?");  
 
 if (country === "Portugal") {  
@@ -13,7 +13,7 @@ if (country !== "Portugal") {
 }
 ```
 ### If else statement
-```
+```JS
 let age = prompt("How old are you?");
 
 if (age < 18) {
@@ -23,7 +23,7 @@ if (age < 18) {
 }
 ```
 ### Nested if else statements
-```
+```JS
 if (age < 18) {  
   alert("you can't apply");  
 } else {  
@@ -35,13 +35,13 @@ if (age < 18) {
 }
 ```
 ### Logical Or
-```
+```JS
 if (age < 18 || gender === "male") {  
   alert("You can't join SheCodes 👩‍💻"); 
 }
 ```
 ### Logical And
-```
+```JS
 if (continent === "Europe" && language === "Portuguese") {  
   alert("You are from Portugal 🇵🇹");  
 } else {
@@ -51,7 +51,7 @@ if (continent === "Europe" && language === "Portuguese") {
 
 # Math.
 
-```
+```JS
 var pi = Math.PI;       // 3.141592653589793
 Math.round(4.4);        // = 4 - rounded
 Math.round(4.5);        // = 5
@@ -71,7 +71,7 @@ Math.floor(Math.random() * 5) + 1;  // random integer, from 1 to 5
 ```
 # Arrays
 
-```
+```JS
 dogs.toString();                        // convert to string: results "Bulldog,Beagle,Labrador"
 dogs.join(" * ");                       // join: "Bulldog * Beagle * Labrador"
 dogs.pop();                             // remove last element
@@ -91,7 +91,7 @@ highest = x[0];                         // first item in sorted array is the low
 x.sort(function(a, b){return 0.5 - Math.random()});     // random order sort
 ```
 ### while loop
-```
+```JS
 let times = 0;
 while (times < 10) {  
   console.log(times);  
@@ -99,14 +99,14 @@ while (times < 10) {
 }
 ```
 ### forEeach loop
-```
+```JS
 let fruits = ['apples', 'oranges', 'bananas'];  
 fruits.forEach(function(fruit) {  
   alert("I have " + fruit + " in my shopping bag");
 });
 ```
 ### do while loop
-```
+```JS
 let times = 0;
 do {
   console.log(times);
@@ -114,7 +114,7 @@ do {
 } while(times < 10)
 ```
 ### do while loop
-```
+```JS
 let times = 0;
 do {
   console.log(times);
@@ -125,19 +125,19 @@ for (let i = 0; i < 10; i++) {
   console.log("i is " + i);
 }
 ```
-```
+```JS
 for (let i = 0; i < myList.length; i++) {  
   alert("I have " + myList[i] + " in my shopping bag");
 }
 ```
 ### Remove first item
-```
+```JS
 fruits.shift()
 ```
 # Functions
 
 ### JS Functions
-```
+```JS
 function sayFact() {  
   let name = prompt("What's your name?");
 
@@ -149,7 +149,7 @@ function sayFact() {
 sayFact();
 ```
 ### JS Functions Parameters
-```
+```JS
 function fullName(firstName, lastName) {  
   alert(firstName + " " + lastName);
 }
@@ -160,7 +160,7 @@ fullName(firstName, lastName);
 fullName("Kate", "Robinson");
 ```
 ### JS Functions Return
-```
+```JS
 function add(x, y) {
   return x + y;
 }
@@ -187,7 +187,7 @@ alert(userFullName); // Kate Robinson
 alert(getFullName("Julie", "Smith")); // Julie Smith
 ```
 ### Closures
-```
+```JS
 function hello() {
   function go(name) {
     alert(name);
@@ -202,14 +202,14 @@ hello();
 # Debugging
 
 ###  Console.log
-```
+```JS
 console.log(name);
 console.log("Let's code!");
 ```
 # Selectors
 
 ### QuerySelector
-```
+```JS
 let li = document.querySelector("li");
 
 
@@ -221,7 +221,7 @@ let paragraph = document.querySelector("ul#list p");
 Returns the first element (if any) on the page matching the selector.
 
 ### QuerySelectorAll
-```
+```JS
 let lis = document.querySelectorAll("li");
 let paragraphs = document.querySelectorAll("li#special p");
 ```
@@ -231,7 +231,7 @@ Returns all elements (if any) on the page matching the selector.
 
 ### AJAX with Fetch
 
-```
+```JS
 let root = 'https://jsonplaceholder.typicode.com'
 let path = 'users/1'
 
@@ -246,7 +246,7 @@ fetch(root + '/' + path)
 Note: We recommend axios instead
 
 ### AJAX with Axios
-```
+```JS
 <!DOCTYPE html>
 <html>
   <head>
